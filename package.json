@@ -1,0 +1,40 @@
+{
+  "author": {
+    "name": "Amin NAIRI",
+    "url": "https://github.com/aminnairi"
+  },
+  "bugs": {
+    "url": "https://github.com/aminnairi/environment/issues"
+  },
+  "description": "Easily parse your environment",
+  "files": [
+    "environment.min.js",
+    "environment.d.ts"
+  ],
+  "homepage": "https://github.com/aminnairi/environment#readme",
+  "keywords": [
+    "env",
+    "dotenv",
+    "environment"
+  ],
+  "license": "MIT",
+  "main": "environment.min.js",
+  "name": "@aminnairi/environment",
+  "repository": {
+    "directory": ".",
+    "type": "git",
+    "url": "https://github.com/aminnairi/environment.git"
+  },
+  "types": "environment.d.ts",
+  "version": "0.1.0",
+  "scripts": {
+    "tests": "mocha environment.spec.js",
+    "build": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.1",
+    "mocha": "^8.3.0",
+    "rollup": "^2.40.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
