@@ -2,10 +2,10 @@
 
 ## Requirements
 
-- Git
-- GitHub CLI
-- Node
-- NPM
+- [Git](https://git-scm.com/)
+- [GitHub CLI](https://github.com/cli/cli)
+- [Node](https://nodejs.org/en/)
+- [NPM](https://npmjs.com/)
 
 ## Installation
 
@@ -36,6 +36,12 @@ $ git branch development-branch
 
 ```console
 $ git checkout development-branch
+```
+
+## Test
+
+```console
+$ npm run test
 ```
 
 ## Build
