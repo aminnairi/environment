@@ -31,6 +31,7 @@ await Environment.from(".env");
 
 - [Node](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
+- [NPX](https://www.npmjs.com/)
 
 ## Installation
 
@@ -275,6 +276,29 @@ const main = async () => {
 };
 
 main().catch(error => console.error(error.message));
+```
+
+### Preview
+
+```console
+$ touch .env
+```
+
+```env
+USER=johndoe
+PASSWORD=password
+HOST=host
+DATABASE=database
+URL="$USER:$PASSWORD@$HOST/$DATABASE"
+```
+
+```console
+$ npx @aminnairi/environment .env
+"USER" "johndoe"
+"PASSWORD" "password"
+"HOST" "host"
+"DATABASE" "database"
+"URL" "johndoe:password@host/database"
 ```
 
 ### Error handling (async/await)
