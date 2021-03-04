@@ -6,6 +6,7 @@ export default {
         terser()
     ],
     output: {
+        banner: "#!/usr/bin/env node",
         file: "environment.min.js",
         format: "cjs"
     }
