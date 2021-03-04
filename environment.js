@@ -64,4 +64,14 @@ const Environment = {
     }
 };
 
+if (module.parent === null && process.argv !== undefined) {
+    Environment.from(process.argv[2]).then(environment => {
+        Object.entries(environment).forEach(([environmentKey, environmentValue]) => {
+            console.log(`${JSON.stringify(environmentKey)} ${JSON.stringify(environmentValue)}`);
+        });
+    }).catch(error => {
+        console.error(error.message);
+    });
+}
+
 module.exports = {Environment};
