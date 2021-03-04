@@ -30,7 +30,7 @@
     "url": "https://github.com/aminnairi/environment.git"
   },
   "types": "environment.d.ts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "scripts": {
     "tests": "mocha environment.spec.js",
     "build": "rollup --config rollup.config.js"
