@@ -18,6 +18,12 @@ await Environment.from(".env");
   - [Multiline](#multiline)
   - [Comments](#comments)
   - [Undefined environment variables](#undefined-environment-variables)
+  - [Multiple environments](#multiple-environments)
+  - [Error handling (async/await)](#error-handling-(async/await))
+  - [Error handling (Promise)](#error-handling-(promise))
+- [CHANGELOG](#changelog)
+- [CONTRIBUTING](#contributing)
+- [LICENSE](#license)
 
 ## Requirements
 
@@ -27,7 +33,7 @@ await Environment.from(".env");
 ## Installation
 
 ```console
-$ npm install @aminnairi/environment@0.1.0
+$ npm install --save-exact @aminnairi/environment@0.1.0
 ```
 
 ## Usage
@@ -240,6 +246,30 @@ const main = async () => {
 
     console.log(environment.USER_NAME); // undefined
     console.log(environment.USER_EMAIL); // undefined
+};
+
+main().catch(error => console.error(error.message));
+```
+
+### Multiple environments
+
+```console
+$ touch index.js
+```
+
+```javascript
+const {Environment} = require("./environment.min.js");
+
+const main = async () => {
+    const [local, prod, test] = await Promise.all([
+        Environment.from(".env.local"),
+        Environment.from(".env.prod"),
+        Environment.from(".env.test")
+    ]);
+
+    console.log(local);
+    console.log(prod);
+    console.log(test);
 };
 
 main().catch(error => console.error(error.message));
