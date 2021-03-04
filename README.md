@@ -2,6 +2,8 @@
 
 Easily parse your environment
 
+![minified size of the package](https://img.shields.io/bundlephobia/minzip/@aminnairi/environment) ![vulnerability count according to Snyk.io](https://img.shields.io/snyk/vulnerabilities/github/aminnairi/environment) ![NPM package's download count per month](https://img.shields.io/npm/dw/@aminnairi/environment) ![support of TypeScript](https://img.shields.io/npm/types/@aminnairi/environment)
+
 ```javascript
 await Environment.from(".env");
 ```
