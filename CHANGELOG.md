@@ -2,11 +2,26 @@
 
 ## Summary
 
+- [`0.2.2`](#022)
 - [`0.2.1`](#021)
 - [`0.2.0`](#020)
 - [`0.1.0`](#010)
 
 ## Versions
+
+## 0.2.2
+
+### Major changes
+
+None.
+
+### Minor changes
+
+None.
+
+### Patches
+
+- Fixed the version in the `README.md` file.
 
 ### 0.2.1
 
