@@ -3,6 +3,7 @@
     "name": "Amin NAIRI",
     "url": "https://github.com/aminnairi"
   },
+  "bin": "./environment.min.js",
   "bugs": {
     "url": "https://github.com/aminnairi/environment/issues"
   },
@@ -29,7 +30,7 @@
     "url": "https://github.com/aminnairi/environment.git"
   },
   "types": "environment.d.ts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "tests": "mocha environment.spec.js",
     "build": "rollup --config rollup.config.js"
