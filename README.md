@@ -33,7 +33,7 @@ Easily parse your environment
 ## Installation
 
 ```console
-$ npm install --save-exact @aminnairi/environment@0.1.0
+$ npm install --save-exact @aminnairi/environment@0.2.2
 ```
 
 ## Usage
