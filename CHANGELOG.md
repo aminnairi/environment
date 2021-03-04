@@ -2,10 +2,25 @@
 
 ## Summary
 
+- [`0.2.1`](#021)
 - [`0.2.0`](#020)
 - [`0.1.0`](#010)
 
 ## Versions
+
+### 0.2.1
+
+#### Major changes
+
+None.
+
+#### Minor changes
+
+None.
+
+#### Patches
+
+- Fixed an issue that prevented using the cli because of a missing `bin` property in the `package.json` file.
 
 ### 0.2.0
 
@@ -30,10 +45,6 @@ None.
 #### Patches
 
 - Fixed an issue that prevented using the function `Environment.from` correctly due to incorrect TypeScript type definitions.
-
-- [`0.1.0`](#010)
-
-## Versions
 
 ### 0.1.0
 
