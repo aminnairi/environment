@@ -25,6 +25,7 @@ None.
 - Added instructions on how to install the library with an exact version in the `README.md`.
 - Added instructions on how to use multi-line variables in the `README.md`.
 - Added many badges to the `README.md` file.
+- It is now possible to "quick peek" at what the parser will return without having to test it in a script but rather on the cli with `npx @aminnairi/environment .env`.
 
 #### Patches
 
